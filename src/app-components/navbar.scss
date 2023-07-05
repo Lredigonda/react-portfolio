@@ -1,0 +1,56 @@
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  transition: all 0.3s ease-out 0s;
+  margin-bottom: 5rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__home {
+      &__title {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding-left: 3rem;
+        color: #5694b2;
+
+        &:hover {
+          filter: drop-shadow(1px 1px 5px #a7a7a7);
+        }
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+      padding-right: 3rem;
+
+      &__about,
+      &__projects,
+      &__contact,
+      &__repository {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-left: 1.5rem;
+      }
+      &__repository svg {
+        background-color: #ffffff;
+        color: #ffffff;
+        padding: 0.25rem 1.75rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #345e72;
+        background-color: rgba(52, 94, 114, 50%);
+      }
+    }
+  }
+}
+.sticky {
+  transition: all 0.3s ease-out 0s;
+  background-color: #15262fd5;
+}

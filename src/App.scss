@@ -1,0 +1,26 @@
+.app {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(160deg, #f7fafc 0%, #b4d0dd 100%);
+  height: 100%;
+  
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: #1b313c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5694b2;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}

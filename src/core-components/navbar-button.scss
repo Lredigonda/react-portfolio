@@ -1,0 +1,30 @@
+.navbarbutton {
+  padding: 0;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  color: #5694b2;
+
+  
+  &__link {
+    text-decoration: none;
+
+    &:link{
+      color: #5694b2;
+    }
+
+    &:visited {
+      color: #5694b2;
+    }
+
+    &:hover {
+      transition: 0.3s;
+      color: #345e72;
+    }
+
+    &__icon {
+      padding-right: 0.25rem;
+      font-size: 1rem;
+    }
+  }
+}

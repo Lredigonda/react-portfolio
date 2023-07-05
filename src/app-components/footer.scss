@@ -1,0 +1,66 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #15262f;
+  align-items: center;
+  margin-top: 10rem;
+
+  &__container {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0.5rem 0;
+
+    &__logo {
+      color: #5694b2;
+      font-weight: 400;
+      margin-right: 0.5rem;
+    }
+
+    &__title {
+      font-weight: 400;
+
+      & b {
+        color: #5694b2;
+      }
+    }
+  }
+
+  &__top,
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    &__right,
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__contact-button {
+    &__instagram,
+    &__facebook,
+    &__twitter,
+    &__linkedin,
+    &__github {
+      margin-right: 1rem;
+
+      & img {
+        width: 1rem;
+        height: 1rem;
+      }
+
+      &:hover {
+        filter: drop-shadow(1px 1px 5px #5a5a5a);
+      }
+    }
+
+    &__github {
+      margin-right: 0;
+    }
+  }
+}

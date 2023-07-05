@@ -1,0 +1,23 @@
+.card {
+  box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.175);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  margin: 7.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+
+  &.border {
+    border: solid 1px #e7eaf3;
+    box-shadow: 0 0.5rem 1.2rem rgba(189, 197, 209, 0.2);
+  }
+
+  &__title {
+    color: #4a4f55;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0;
+  }
+}
