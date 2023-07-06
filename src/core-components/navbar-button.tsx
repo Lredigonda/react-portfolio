@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./navbar-button.scss";
 
 export interface navbarButtonProps {
-  className: string;
+  className?: string;
   text?: string;
   url: string;
   children?: JSX.Element;

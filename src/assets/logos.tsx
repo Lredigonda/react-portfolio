@@ -1,4 +1,4 @@
-export const CSS: React.FC = () => {
+export const CSS = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
       <path
@@ -9,7 +9,7 @@ export const CSS: React.FC = () => {
   );
 };
 
-export const Git: React.FC = () => {
+export const Git = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path
@@ -20,7 +20,7 @@ export const Git: React.FC = () => {
   );
 };
 
-export const Github: React.FC = () => {
+export const Github = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
       <path
@@ -31,7 +31,7 @@ export const Github: React.FC = () => {
   );
 };
 
-export const HTML: React.FC = () => {
+export const HTML = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
       <path
@@ -42,7 +42,7 @@ export const HTML: React.FC = () => {
   );
 };
 
-export const Javascript: React.FC = () => {
+export const Javascript = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export const Javascript: React.FC = () => {
   );
 };
 
-export const Linux: React.FC = () => {
+export const Linux = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path
@@ -68,7 +68,7 @@ export const Linux: React.FC = () => {
   );
 };
 
-export const React: React.FC = () => {
+export const React = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ export const React: React.FC = () => {
   );
 };
 
-export const SASS: React.FC = () => {
+export const SASS = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ export const SASS: React.FC = () => {
   );
 };
 
-export const Typescript: React.FC = () => {
+export const Typescript = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ export const Typescript: React.FC = () => {
   );
 };
 
-export const VSCode: React.FC = () => {
+export const VSCode = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path
