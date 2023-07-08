@@ -5,10 +5,15 @@ import { SocialMediaData, SocialMediaDataProps } from "./utils";
 
 interface SocialMediaProps {
   haveTitle?: boolean;
+  theme?: "dark" | "light";
   size: "S" | "M" | "L";
 }
 
-export const SocialMedia = ({ haveTitle, size = "M" }: SocialMediaProps) => {
+export const SocialMedia = ({
+  haveTitle,
+  size = "M",
+  theme = "light",
+}: SocialMediaProps) => {
   return (
     <div className="social-media">
       {haveTitle ? (
@@ -23,6 +28,7 @@ export const SocialMedia = ({ haveTitle, size = "M" }: SocialMediaProps) => {
             <div key={name} className={`social-media__buttons-${name}`}>
               <LinkComponent url={url} isExternal>
                 <img
+                  className={`social-media__images ${theme}`}
                   src={`${window.location.origin}/social-media-logos/${name}.svg`}
                 />
               </LinkComponent>

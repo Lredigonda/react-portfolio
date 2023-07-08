@@ -1,3 +1,5 @@
+@import "../variables";
+
 .social-media {
   display: flex;
   flex-direction: column;
@@ -10,7 +12,7 @@
     font-weight: 400;
 
     & b {
-      color: #5694b2;
+      color: $primary-regular;
     }
   }
 
@@ -32,11 +34,14 @@
         height: 3rem;
 
         &:hover {
-          filter: drop-shadow(1px 1px 5px #5694b2);
+          filter: drop-shadow(1px 1px 5px $primary-regular);
         }
       }
     }
   }
+}
+.light {
+  filter: invert(1);
 }
 
 .size-M {

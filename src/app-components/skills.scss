@@ -1,3 +1,5 @@
+@import "../variables";
+
 .skills {
   width: 100%;
   max-width: 1500px;
@@ -14,39 +16,8 @@
       font-weight: 400;
 
       & b {
-        color: #345e72;
+        color: $primary-extra-dark;
       }
-    }
-
-    &__tools,
-    &__lang {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  &__language,
-  &__tools {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 9rem;
-    height: 9rem;
-    background-color: #15262f31;
-    border: 1px solid #345e72;
-
-    & svg {
-      width: 100%;
-      height: 100%;
-      filter: drop-shadow(0 0 1px #9b9b9b);
-    }
-
-    &:hover {
-      transition: 1s;
-      transform: translateY(-0.5rem);
-      border-color: #5694b2;
-      box-shadow: 0px 0px 1px #749cb1;
     }
   }
 }

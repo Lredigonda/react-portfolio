@@ -3,22 +3,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #5694b2;
+  color: unset;
 
   &__link {
     text-decoration: none;
 
     &:link {
-      color: #5694b2;
+      color: unset;
     }
 
     &:visited {
-      color: #5694b2;
+      color: unset;
     }
 
     &:hover {
       transition: 0.3s;
-      color: #345e72;
+      color: unset;
     }
 
     &__icon {

@@ -24,7 +24,7 @@ export const Navbar = () => {
           <h2 className="navbar__title">LR.</h2>
         </NavbarButton>
 
-        <nav className="navbar__container__buttons">
+        <nav className="navbar__buttons">
           <NavbarButton text="Sobre mi" url="/about" />
 
           <NavbarButton text="Proyectos" url="/projects" />

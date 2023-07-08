@@ -1,3 +1,5 @@
+@import "../variables";
+
 .homepanel {
   width: 100%;
 
@@ -25,7 +27,7 @@
       padding-left: 5rem;
 
       & b {
-        color: #5694b2;
+        color: $primary-regular;
       }
     }
 
@@ -36,7 +38,7 @@
       padding-left: 5rem;
 
       & b {
-        color: #345e72;
+        color: $primary-extra-dark;
       }
     }
   }

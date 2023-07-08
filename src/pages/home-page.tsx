@@ -9,7 +9,7 @@ export const HomePage = () => {
     <div className="home-page">
       <HomePanel />
       <AboutMe />
-      <SocialMedia haveTitle size="M" />
+      <SocialMedia haveTitle size="M" theme="dark" />
     </div>
   );
 };
