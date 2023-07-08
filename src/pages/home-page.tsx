@@ -1,6 +1,6 @@
 import { AboutMe } from "../app-components/about-me";
-import { SocialMedia } from "../app-components/social-media";
 import { HomePanel } from "../app-components/home-panel";
+import { SocialMedia } from "../app-components/social-media";
 
 import "./home-page.scss";
 
@@ -9,7 +9,7 @@ export const HomePage = () => {
     <div className="home-page">
       <HomePanel />
       <AboutMe />
-      <SocialMedia />
+      <SocialMedia haveTitle size="M" theme="dark" />
     </div>
   );
 };

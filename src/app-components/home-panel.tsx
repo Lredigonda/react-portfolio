@@ -1,5 +1,5 @@
+import Coding from "../assets/page-decorations/Coding.svg";
 import "./home-panel.scss";
-// import { ReactComponent as Coding } from "../assets/Coding.svg";
 
 export const HomePanel = () => {
   return (
@@ -15,7 +15,7 @@ export const HomePanel = () => {
           </h3>
         </div>
         <div className="homepanel__image-container">
-          {/* <Coding className="homepanel__image" /> */}
+          <img src={Coding} className="homepanel__image" />
         </div>
       </div>
     </section>

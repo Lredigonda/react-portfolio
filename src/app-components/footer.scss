@@ -1,9 +1,13 @@
+@import "../variables";
+
 .footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #15262f;
+  background-color: $secondary-dark;
   align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
   margin-top: 10rem;
 
   &__container {
@@ -11,11 +15,11 @@
     max-width: 1600px;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: $white;
     padding: 0.5rem 0;
 
     &__logo {
-      color: #5694b2;
+      color: $primary-regular;
       font-weight: 400;
       margin-right: 0.5rem;
     }
@@ -24,7 +28,7 @@
       font-weight: 400;
 
       & b {
-        color: #5694b2;
+        color: $primary-regular;
       }
     }
   }
@@ -38,29 +42,6 @@
     &__left {
       display: flex;
       align-items: center;
-    }
-  }
-
-  &__contact-button {
-    &__instagram,
-    &__facebook,
-    &__twitter,
-    &__linkedin,
-    &__github {
-      margin-right: 1rem;
-
-      & img {
-        width: 1rem;
-        height: 1rem;
-      }
-
-      &:hover {
-        filter: drop-shadow(1px 1px 5px #5a5a5a);
-      }
-    }
-
-    &__github {
-      margin-right: 0;
     }
   }
 }

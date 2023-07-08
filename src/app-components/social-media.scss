@@ -1,17 +1,18 @@
+@import "../variables";
+
 .social-media {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1600px;
   margin-top: 10rem;
 
   &__title {
     font-weight: 400;
 
     & b {
-      color: #5694b2;
+      color: $primary-regular;
     }
   }
 
@@ -19,11 +20,11 @@
     width: 50%;
     display: flex;
 
-    &__instagram,
-    &__twitter,
-    &__facebook,
-    &__linkedin,
-    &__github {
+    &-Instagram,
+    &-Twitter,
+    &-Facebook,
+    &-Linkedin,
+    &-Github {
       flex: 1;
       display: flex;
       justify-content: center;
@@ -33,9 +34,31 @@
         height: 3rem;
 
         &:hover {
-          filter: drop-shadow(1px 1px 5px #5694b2);
+          filter: drop-shadow(1px 1px 5px $primary-regular);
         }
       }
     }
+  }
+}
+.light {
+  filter: invert(1);
+}
+
+.size-M {
+  & img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.size-L {
+  & img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+.size-S {
+  & img {
+    width: 1rem;
+    height: 1rem;
   }
 }

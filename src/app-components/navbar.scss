@@ -1,3 +1,5 @@
+@import "../variables";
+
 .navbar {
   width: 100%;
   position: sticky;
@@ -6,51 +8,65 @@
   transition: all 0.3s ease-out 0s;
   margin-bottom: 5rem;
 
+  &__title {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-left: 3rem;
+    color: $tertiary-regular;
+
+    &:hover {
+      filter: drop-shadow(0 0 2px $tertiary-very-dark);
+    }
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 
-    &__home {
-      &__title {
-        margin: 0;
-        font-size: 2.5rem;
-        font-weight: 400;
-        padding-left: 3rem;
-        color: #5694b2;
+  &__buttons {
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: $primary-regular;
 
-        &:hover {
-          filter: drop-shadow(1px 1px 5px #a7a7a7);
-        }
-      }
+    & div:hover {
+      color: $primary-extra-dark;
+    }
+  }
+
+  .repository-button {
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid $tertiary-regular;
+    background-color: $tertiary-extra-dark-opacity;
+    padding: 0.25rem 1.75rem;
+
+    & img {
+      width: 1rem;
+      height: 1rem;
     }
 
-    &__buttons {
-      display: flex;
-      align-items: center;
-      padding-right: 3rem;
-
-      &__about,
-      &__projects,
-      &__contact,
-      &__repository {
-        font-size: 1.25rem;
-        font-weight: 400;
-        margin-left: 1.5rem;
-      }
-      &__repository svg {
-        background-color: #ffffff;
-        color: #ffffff;
-        padding: 0.25rem 1.75rem;
-        font-size: 1rem;
-        border-radius: 0.5rem;
-        border: 1px solid #345e72;
-        background-color: rgba(52, 94, 114, 50%);
-      }
+    &:hover {
+      background-color: $tertiary-regular;
     }
   }
 }
+
 .sticky {
   transition: all 0.3s ease-out 0s;
-  background-color: #15262fd5;
+  background-color: #15262fcd;
+  backdrop-filter: blur(10px);
+
+  .navbar__buttons div {
+    &:hover {
+      color: $primary-extra-light;
+    }
+  }
 }

@@ -1,9 +1,11 @@
+@import "./variables";
+
 .app {
   margin: 0;
   padding: 0;
-  background: linear-gradient(160deg, #f7fafc 0%, #b4d0dd 100%);
+  background: $light-background-gradient;
   height: 100%;
-  
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -13,11 +15,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1b313c;
+  background: $secondary-very-dark;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5694b2;
+  background: $primary-regular;
   border-radius: 12px;
 }
 
